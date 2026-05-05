@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Portfolio | Mayuri Kadam </title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#181c23",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#7c2e00",
+                        "on-error": "#ffffff",
+                        "on-tertiary-container": "#fffbff",
+                        "on-secondary-container": "#626566",
+                        "surface-container": "#ebedf9",
+                        "on-primary-fixed-variant": "#004493",
+                        "outline-variant": "#c1c6d7",
+                        "secondary-fixed-dim": "#c5c7c8",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e0e2ed",
+                        "on-tertiary-fixed": "#351000",
+                        "secondary-fixed": "#e1e3e4",
+                        "surface-container-high": "#e6e8f3",
+                        "surface-dim": "#d7d9e5",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#eef0fb",
+                        "error": "#ba1a1a",
+                        "tertiary": "#9e3d00",
+                        "surface": "#f9f9ff",
+                        "secondary-container": "#e1e3e4",
+                        "primary-fixed-dim": "#adc7ff",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb695",
+                        "on-primary-container": "#fefcff",
+                        "surface-variant": "#e0e2ed",
+                        "tertiary-fixed": "#ffdbcc",
+                        "on-secondary-fixed": "#191c1d",
+                        "surface-bright": "#f9f9ff",
+                        "surface-container-low": "#f1f3fe",
+                        "primary": "#0059bb",
+                        "on-secondary-fixed-variant": "#454748",
+                        "on-surface-variant": "#414754",
+                        "inverse-surface": "#2d3039",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed": "#001a41",
+                        "outline": "#717786",
+                        "inverse-primary": "#adc7ff",
+                        "surface-tint": "#005bc0",
+                        "background": "#f9f9ff",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#0070ea",
+                        "secondary": "#5c5f60",
+                        "on-surface": "#181c23",
+                        "tertiary-container": "#c64f00",
+                        "primary-fixed": "#d8e2ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-padding": "80px",
+                        "unit": "8px",
+                        "element-gap": "16px",
+                        "gutter": "24px",
+                        "container-max": "1140px"
+                    },
+                    "fontFamily": {
+                        "h3": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "h2": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "h1": ["Inter"]
+                    },
+                    "fontSize": {
+                        "h3": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "label-sm": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "h2": ["32px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "h1": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .custom-shadow {
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+    <nav
+        class="bg-white/90 dark:bg-gray-950/90 backdrop-blur-md fixed top-0 w-full z-50 shadow-sm border-b border-gray-100 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-12 h-20">
+            <div class="text-lg font-bold text-gray-900 dark:text-white tracking-tighter">Portfolio</div>
+            <div class="hidden md:flex gap-8 items-center">
+                <a class="text-gray-600 dark:text-gray-400 font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                    href="#about">About</a>
+                <a class="text-gray-600 dark:text-gray-400 font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                    href="#projects">Projects</a>
+                <a class="text-gray-600 dark:text-gray-400 font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                    href="#skills">Skills</a>
+                <a class="px-6 py-2 bg-primary text-on-primary font-label-sm rounded-lg hover:translate-y-[-2px] transition-all duration-300 shadow-sm active:scale-95"
+                    href="#contact">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <span class="material-symbols-outlined text-on-background">menu</span>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="pt-40 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-7">
+                    <span class="text-primary font-label-sm tracking-widest block mb-4 uppercase">First Year Computer
+                        Engineering Student</span>
+                    <h1 class="font-h1 text-h1 text-on-background mb-6">Hi, I'm <span class="text-primary"> Mayuri Kadam
+                        </span></h1>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-10">
+                        Passionate about coding, problem-solving, and building real-world projects. Currently exploring
+                        the intersection of hardware and software at the university.
+                    </p>
+                    <div class="flex gap-4">
+                        <a class="px-8 py-4 bg-primary text-on-primary font-label-sm rounded-lg hover:bg-primary-container hover:translate-y-[-2px] transition-all duration-300 custom-shadow"
+                            href="#projects">
+                            View Projects
+                        </a>
+                        <a class="px-8 py-4 bg-surface-container-highest text-on-surface font-label-sm rounded-lg hover:bg-surface-variant transition-all duration-300 border border-outline-variant"
+                            href="#contact">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+                <div class="md:col-span-5 relative">
+                    <div class="aspect-square bg-primary-fixed rounded-full overflow-hidden custom-shadow">
+                        <img src="photo.jpeg" alt="Mayuri Kadam" class="w-full h-full object-cover rounded-full" />
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg custom-shadow hidden md:block">
+                        <div class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary"
+                                style="font-variation-settings: 'FILL' 1;">code</span>
+                            <div>
+                                <p class="font-bold text-on-background">Active Coder</p>
+                                <p class="text-label-sm text-on-surface-variant">Daily Problem Solving</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-section-padding bg-surface-container-low" id="about">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="p-6 bg-white rounded-lg custom-shadow border border-gray-100">
+                                <span class="material-symbols-outlined text-primary mb-2">memory</span>
+                                <h4 class="font-h3 text-h3 mb-2">Engr. Student</h4>
+                                <p class="text-on-surface-variant text-body-md">Deep diving into hardware logic and
+                                    system architecture.</p>
+                            </div>
+                            <div class="p-6 bg-white rounded-lg custom-shadow border border-gray-100 mt-8">
+                                <span class="material-symbols-outlined text-primary mb-2">auto_awesome</span>
+                                <h4 class="font-h3 text-h3 mb-2">AI Enthusiast</h4>
+                                <p class="text-on-surface-variant text-body-md">Fascinated by machine learning and
+                                    neural networks.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <h2 class="font-h2 text-h2 text-on-background mb-6">About Me</h2>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant mb-6 leading-relaxed">
+                            Currently pursuing my degree in Computer Engineering, I am building a strong foundation in
+                            both software development and hardware engineering.
+                        </p>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+                            My journey began with a simple "Hello World" in Python, which sparked an endless curiosity
+                            for Web Development and AI. I believe in writing clean, efficient code that solves tangible
+                            problems.
+                        </p>
+                        <div class="flex gap-8">
+                            <div>
+                                <p class="text-h2 font-h2 text-primary">10+</p>
+                                <p class="text-label-sm text-on-surface-variant">Projects Built</p>
+                            </div>
+                            <div>
+                                <p class="text-h2 font-h2 text-primary">5+</p>
+                                <p class="text-label-sm text-on-surface-variant">Certifications</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-section-padding bg-background" id="projects">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+                    <div>
+                        <h2 class="font-h2 text-h2 text-on-background mb-4">Featured Projects</h2>
+                        <p class="text-on-surface-variant max-w-lg">Selection of work ranging from firmware experiments
+                            to web applications.</p>
+                    </div>
+                    <a class="text-primary font-label-sm flex items-center gap-2 hover:underline" href="#">
+                        View All Repository <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div
+                        class="group bg-white rounded-lg overflow-hidden border border-gray-100 custom-shadow transition-transform hover:-translate-y-2">
+                        <div class="aspect-video relative overflow-hidden">
+                            <img alt="Python Automation Project"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                data-alt="Modern dark-themed code editor screen showing python script with syntax highlighting in a clean workspace"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG9rrPuqbgIxgT9XWL_JL3fG8H4H_E_jSarBtGswFS8pTjdkFaKgKJPlOJdSlSwfRzZcybFev_399FOT-wmEZRIvHOirz9uqlkJDooVqIy9ZAYbM3kJYFQ9fqupvA7AEQJm6qpX5MlMNI68RWqE7GMqUMBvLZTO6_A7YWJsNxby_4_nFt9XpHWSyg8B3HIMZRFFHk2Qido7teFMaoNQtwifaGFNwICHSJn91FpHjrUZzclqTyQbZjNXa1QdbPT9uRgEDYRTpUZzw" />
+                            <div
+                                class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-sm text-xs font-bold text-primary">
+                                Python</div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="font-h3 text-h3 mb-3">Task Automator</h3>
+                            <p class="text-on-surface-variant text-body-md mb-6">A desktop utility that automates daily
+                                file sorting and backup processes using Python OS libraries.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span
+                                    class="px-3 py-1 bg-surface-container rounded-full text-xs text-on-surface-variant">Automation</span>
+                                <span
+                                    class="px-3 py-1 bg-surface-container rounded-full text-xs text-on-surface-variant">Scripting</span>
+                            </div>
+                            <div class="flex gap-4">
+                                <a class="text-primary font-label-sm flex items-center gap-1" href="#">GitHub <span
+                                        class="material-symbols-outlined text-[18px]">link</span></a>
+                                <a class="text-primary font-label-sm flex items-center gap-1" href="#">Live Demo <span
+                                        class="material-symbols-outlined text-[18px]">open_in_new</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="group bg-white rounded-lg overflow-hidden border border-gray-100 custom-shadow transition-transform hover:-translate-y-2">
+                        <div class="aspect-video relative overflow-hidden">
+                            <img alt="E-commerce Interface"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                data-alt="Clean minimalist web interface dashboard with subtle blue accents and modern typography elements"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwg2ViiuCpovP7IHc2aI6a9SpEnH7FDdBSQlvQAFROiyrAAGExcXUbVUbXndT87aC5_XZ3ES5yrRmMA9cEIHdvTsQsKmlNC1jXUm7DPNCj-7_UVRReJnLQEb24C0ZKSQiCodBaHaeYZM8ozBAhPMrg5NFlK6PHfr2-840U9xEenGvy8Jgb24QdHIPlhvHA2X-Ml5a-ebh6v_HxO_Avk5Yv8GDkHNJmF2B-ME-i8qNHRyTbWHcuoUm1-l-gvdahq66Jm92t_JEgYw" />
+                            <div
+                                class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-sm text-xs font-bold text-primary">
+                                Web Dev</div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="font-h3 text-h3 mb-3">Minimalist Storefront</h3>
+                            <p class="text-on-surface-variant text-body-md mb-6">A responsive frontend prototype for a
+                                minimalist e-commerce store built with HTML, CSS, and JS.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span
+                                    class="px-3 py-1 bg-surface-container rounded-full text-xs text-on-surface-variant">Frontend</span>
+                                <span
+                                    class="px-3 py-1 bg-surface-container rounded-full text-xs text-on-surface-variant">UI
+                                    Design</span>
+                            </div>
+                            <div class="flex gap-4">
+                                <a class="text-primary font-label-sm flex items-center gap-1" href="#">GitHub <span
+                                        class="material-symbols-outlined text-[18px]">link</span></a>
+                                <a class="text-primary font-label-sm flex items-center gap-1" href="#">Live Demo <span
+                                        class="material-symbols-outlined text-[18px]">open_in_new</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="group bg-white rounded-lg overflow-hidden border border-gray-100 custom-shadow transition-transform hover:-translate-y-2">
+                        <div class="aspect-video relative overflow-hidden">
+                            <img alt="Circuitry and Hardware"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                data-alt="Macro photography of a blue-lit circuit board with high technical detail and glowing electronic components"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPl0ZbrrO7KhCGy4BXbdb4_4BZyygNjw5BLshf-xoDm31EjzZchyepXRlhb7xzX2oN_4R5yUWxzIm1GmL_5S4TmoyalLdtBW0fGI0mHoiHQSf8pj3SBaL-JM3KOR8hV4LmoUBtxCT6orOPz3hpdS1fBlIRfOm_vCgZCoRFbi8aelpURfPoiK0XqPiSefPBw4yCuXrRNGV3Vb-6Eh7qvWSDlQWSZjDBe8CkuMqrwJPzkkpuh_6RcMP0ovtuGIC2A9uj8X5-2DoylA" />
+                            <div
+                                class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-sm text-xs font-bold text-primary">
+                                Firmware</div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="font-h3 text-h3 mb-3">Smart Temp Monitor</h3>
+                            <p class="text-on-surface-variant text-body-md mb-6">An Arduino-based temperature monitoring
+                                system with an OLED display and real-time alerts.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span
+                                    class="px-3 py-1 bg-surface-container rounded-full text-xs text-on-surface-variant">C++</span>
+                                <span
+                                    class="px-3 py-1 bg-surface-container rounded-full text-xs text-on-surface-variant">IoT</span>
+                            </div>
+                            <div class="flex gap-4">
+                                <a class="text-primary font-label-sm flex items-center gap-1" href="#">GitHub <span
+                                        class="material-symbols-outlined text-[18px]">link</span></a>
+                                <a class="text-primary font-label-sm flex items-center gap-1" href="#">Documentation
+                                    <span class="material-symbols-outlined text-[18px]">description</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-section-padding bg-surface-container-low" id="skills">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                    <div>
+                        <h2 class="font-h2 text-h2 text-on-background mb-4">Technical Arsenal</h2>
+                        <p class="text-on-surface-variant mb-10 max-w-md">The tools and languages I use to bring ideas
+                            to life. Constantly learning and expanding this stack.</p>
+                        <div class="space-y-8">
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-medium text-on-background">Python</span>
+                                    <span class="text-primary font-bold">85%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 h-1 rounded-full overflow-hidden">
+                                    <div class="bg-primary h-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-medium text-on-background">HTML / CSS</span>
+                                    <span class="text-primary font-bold">90%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 h-1 rounded-full overflow-hidden">
+                                    <div class="bg-primary h-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-medium text-on-background">JavaScript</span>
+                                    <span class="text-primary font-bold">60%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 h-1 rounded-full overflow-hidden">
+                                    <div class="bg-primary h-full" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-medium text-on-background">C / C++ (Firmware)</span>
+                                    <span class="text-primary font-bold">45%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 h-1 rounded-full overflow-hidden">
+                                    <div class="bg-primary h-full" style="width: 45%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="achievements">
+                        <h2 class="font-h2 text-h2 text-on-background mb-4">Achievements</h2>
+                        <p class="text-on-surface-variant mb-10">Recognition and certifications earned through my
+                            academic journey.</p>
+                        <div class="space-y-6">
+                            <div
+                                class="flex items-start gap-4 p-6 bg-white rounded-lg border border-gray-100 shadow-sm">
+                                <div class="bg-primary-fixed p-3 rounded-lg">
+                                    <span class="material-symbols-outlined text-primary"
+                                        style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-on-background">Python for Data Science Certification</h4>
+                                    <p class="text-label-sm text-on-surface-variant">Coursera &amp; IBM • 2023</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-start gap-4 p-6 bg-white rounded-lg border border-gray-100 shadow-sm">
+                                <div class="bg-primary-fixed p-3 rounded-lg">
+                                    <span class="material-symbols-outlined text-primary"
+                                        style="font-variation-settings: 'FILL' 1;">military_tech</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-on-background">Regional Hackathon Participant</h4>
+                                    <p class="text-label-sm text-on-surface-variant">Engineering Innovation Hub • 2024
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-start gap-4 p-6 bg-white rounded-lg border border-gray-100 shadow-sm">
+                                <div class="bg-primary-fixed p-3 rounded-lg">
+                                    <span class="material-symbols-outlined text-primary"
+                                        style="font-variation-settings: 'FILL' 1;">terminal</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-on-background">AI Essentials Certificate</h4>
+                                    <p class="text-label-sm text-on-surface-variant">Google Certification • 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-section-padding bg-background" id="contact">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 text-center">
+                <h2 class="font-h2 text-h2 text-on-background mb-4">Let's Connect</h2>
+                <p class="text-on-surface-variant mb-12 max-w-xl mx-auto">Currently open to internship opportunities and
+                    collaborative projects. Feel free to reach out via any of the platforms below.</p>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a class="flex items-center gap-3 px-8 py-4 bg-white border border-outline-variant rounded-lg hover:border-primary hover:text-primary transition-all duration-300 custom-shadow group"
+                        href="kmayuri807@gmail.com">
+                        <span class="material-symbols-outlined group-hover:scale-110 transition-transform">mail</span>
+                        <span class="font-medium">Email Me:kmayuri807@gmail.com</span>
+                    </a>
+                    <a class="flex items-center gap-3 px-8 py-4 bg-white border border-outline-variant rounded-lg hover:border-primary hover:text-primary transition-all duration-300 custom-shadow group"
+                        href="https://linkedin.com" target="_blank">
+                        <span class="material-symbols-outlined group-hover:scale-110 transition-transform">person</span>
+                        <span class="font-medium">LinkedIn</span>
+                    </a>
+                    <a class="flex items-center gap-3 px-8 py-4 bg-white border border-outline-variant rounded-lg hover:border-primary hover:text-primary transition-all duration-300 custom-shadow group"
+                        href="https://github.com/MayuriKadam16-MK" target="_blank">
+                        <span
+                            class="material-symbols-outlined group-hover:scale-110 transition-transform">terminal</span>
+                        <span class="font-medium">GitHub</span>
+                    </a>
+                </div>
+                <div class="mt-24 max-w-3xl mx-auto p-12 bg-surface-container rounded-3xl">
+                    <h3 class="font-h3 text-h3 mb-6">Drop a quick message</h3>
+                    <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <input class="p-4 rounded-lg bg-white border-none focus:ring-2 focus:ring-primary outline-none"
+                            placeholder="Your Name" type="text" />
+                        <input class="p-4 rounded-lg bg-white border-none focus:ring-2 focus:ring-primary outline-none"
+                            placeholder="Email Address" type="email" />
+                        <textarea
+                            class="p-4 rounded-lg bg-white border-none focus:ring-2 focus:ring-primary outline-none md:col-span-2 h-32"
+                            placeholder="Your Message"></textarea>
+                        <button
+                            class="md:col-span-2 bg-primary text-on-primary py-4 rounded-lg font-bold hover:bg-primary-container transition-all"
+                            type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="w-full border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950">
+        <div class="max-w-7xl mx-auto py-16 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-sm font-['Inter'] text-gray-500 dark:text-gray-400">
+                © 2024 Computer Engineering. Designed with rigor.
+            </div>
+            <div class="flex gap-8">
+                <a class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 underline underline-offset-4 transition-all duration-300"
+                    href="#">GitHub</a>
+                <a class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 underline underline-offset-4 transition-all duration-300"
+                    href="#">LinkedIn</a>
+                <a class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 underline underline-offset-4 transition-all duration-300"
+                    href="#">Email</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
